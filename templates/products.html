@@ -1,0 +1,188 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Classic Electricals - Products Page</title>
+    <link rel="shortcut icon" href="{% static 'images\companylogo.png' %}" type="image/x-icon">
+  <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+</head>
+<header>
+  {% include 'includes/header.html' %}
+
+    <section>
+    <!-- Include header -->
+  <!-- <div id="header-placeholder"></div> -->
+  </section>
+</header>
+<body id="product">
+
+    <section class="container-fluid product">
+        <h1>Products</h1>
+    </section>
+
+    
+
+<section class="container-fluid product1 py-5 bg-light">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold text-primary">Our Products</h2>
+      <p class="text-muted">Trusted Solutions for Industrial Inspection & Safety</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- Product 1 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="{% url 'contact' %}" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="{% static 'images/Portable Type gas detector.jpg' %}" class="img-fluid rounded-top" alt="Portable Type Gas Detector">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold mb-0">Portable Type Gas Detector</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 2 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="{% url 'contact' %}" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="{% static 'images/Portable Alcohol Breath Analyzer.jpg' %}" class="img-fluid rounded-top" alt="Portable Alcohol Breath Analyzer">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold mb-0">Portable Alcohol Breath Analyzer</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 3 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="{% url 'contact' %}" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="{% static 'images/Industrial Video Borescope.jpg' %}" class="img-fluid rounded-top" alt="Industrial Video Borescope">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold mb-0">Industrial Video Borescope</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 4 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="{% url 'contact' %}" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="{% static 'images/Coating Thickness gauge.jpg' %}" class="img-fluid rounded-top" alt="Coating Thickness Gauge">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold mb-0">Coating Thickness Gauge</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 5 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="{% url 'contact' %}" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="{% static 'images/Fixed Type Gas detector.jpg' %}" class="img-fluid rounded-top" alt="Fixed Type Gas Detector">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold mb-0">Fixed Type Gas Detector</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 6 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="{% url 'contact' %}" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="{% static 'images/Alcohol Breath Analyzer.jpg' %}" class="img-fluid rounded-top" alt="Alcohol Breath Analyzer">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold mb-0">Alcohol Breath Analyzer</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 7 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="{% url 'contact' %}" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="{% static 'images/Industrial Machine Vision Camera.jpg' %}" class="img-fluid rounded-top" alt="Industrial Machine Vision Camera">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold mb-0">Industrial Machine Vision Camera</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 8 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="{% url 'contact' %}" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="{% static 'images/Mini Pipe inspection Camera.jpg' %}" class="img-fluid rounded-top" alt="Mini Pipe Inspection Camera">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold mb-0">Mini Pipe Inspection Camera</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 9 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="{% url 'contact' %}" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="{% static 'images/Mini Pipe inspection Camera1.jpg' %}" class="img-fluid rounded-top" alt="Mini Pipe Inspection Camera">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold mb-0">Mini Pipe Inspection Camera</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+
+      <!-- Product 10 -->
+      <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+        <a href="{% url 'contact' %}" class="text-decoration-none text-dark">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="{% static 'images/Mini Pipe inspection Camera2.jpg' %}" class="img-fluid rounded-top" alt="Mini Pipe Inspection Camera">
+            <div class="card-body text-center">
+              <h6 class="card-title fw-semibold mb-0">Mini Pipe Inspection Camera</h6>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+ 
+
+
+
+  {% include 'includes/footer.html' %}
+
+  <section>
+    <!-- Include header -->
+  <!-- <div id="footer-placeholder"></div> -->
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Load header from external file
+    fetch('includes/header.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('header-placeholder').innerHTML = data);
+      // Load header from external file
+    fetch('includes/footer.html')
+      .then(response => response.text())
+      .then(data => document.getElementById('footer-placeholder').innerHTML = data);
+  </script>
+</body>
+</html>
