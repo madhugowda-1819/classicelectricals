@@ -66,10 +66,11 @@
 }
 #classic {
   background-color: #f7ece2;
-  margin-top: 220px; /* adjust if header size changes */
-  height: 400px;
+  margin-top: 125px; /* adjust if header size changes */
+  height: 500px;
   width: 100%;
   margin-bottom: 0;
+  padding: 20px;
 }
 
 #classic h3 {
@@ -104,6 +105,9 @@
 }
 /* For tablets (width < 992px) */
 @media (max-width: 991.98px) {
+  #classic{
+    height: 00px;
+  }
   #classic1 {
     height: auto;
     margin-top: 180px;
@@ -145,7 +149,7 @@
 .product h1{
     text-align: center;
     color: white;
-    margin-top: 250px;
+    margin-top: 150px;
     font-size: 60px;
     font-weight: bold;
 }
@@ -206,16 +210,14 @@
     width: 300px;
 }
 
-header{
-  background-image: url('../images/pexels-life-of-pix-2391.jpg');
+
+/* Show Bootstrap dropdown on hover */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0; /* Prevent spacing bug */
 }
 
-#splash-screen {
-    transition: opacity 0.5s ease;
-  }
-
-  #splash-screen.d-none {
-    opacity: 0;
-    pointer-events: none;
-    visibility: hidden;
-  }
+/* Optional: smooth open/close effect */
+.dropdown-menu {
+  transition: all 0.2s ease;
+}

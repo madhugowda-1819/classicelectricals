@@ -8,14 +8,14 @@
     height: auto;
   }
  </style>
-<section class="fixed-top">
+<section class="">
     <header>
   <div class="overlay" style="background-color: rgba(0, 0, 0, 0.6); width: 100%;">
     <nav class="navbar navbar-expand-lg navbar-dark px-3">
       <div class="container-fluid">
         <!-- Logo -->
         <a class="navbar-brand d-flex align-items-center" href="{% url 'index' %}">
-          <img src="{% static 'images/classicicon.png' %}" alt="Classic Electricals Logo" class="img-fluid me-2" style="height: 300px; filter: brightness(2.0);" />
+          <img src="{% static 'images/classicicon.png' %}" alt="Classic Electricals Logo" class="img-fluid me-2" style="height: 100px; filter: brightness(3.0);" />
         </a>
 
         <!-- Toggler for mobile -->
@@ -30,9 +30,18 @@
             <li class="nav-item me-3">
               <a class="nav-link fw-bold text-white" href="{% url 'index' %}">Home</a>
             </li>
-            <li class="nav-item me-3">
-              <a class="nav-link fw-bold text-white" href="{% url 'product' %}">Products</a>
+            <li class="nav-item dropdown me-3">
+              <a class="nav-link  fw-bold text-white" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Products
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="productsDropdown">
+                <li><a class="dropdown-item" href="{% url 'product' %}">Underwater Inspection Cameras</a></li>
+                <li><a class="dropdown-item" href="{% url 'product' %}">Gas Detectors</a></li>
+                <li><a class="dropdown-item" href="{% url 'product' %}">Video Borescopes</a></li>
+                <li><a class="dropdown-item" href="{% url 'product' %}">Machine Vision Cameras</a></li>
+              </ul>
             </li>
+
             <li class="nav-item me-3">
               <a class="nav-link fw-bold text-white" href="{% url 'about' %}">About Us</a>
             </li>

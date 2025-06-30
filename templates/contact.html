@@ -55,7 +55,7 @@
       <!-- Right: Contact Form -->
       
     <div class="col-12 col-lg-7">
-      <h2 class="fw-bold mb-4 text-center text-lg-start">Contact Us</h2>
+      <!-- <h2 class="fw-bold mb-4 text-center text-lg-start">Contact Us</h2> -->
 
       {% if messages %}
         {% for message in messages %}
@@ -142,5 +142,9 @@
       .then(response => response.text())
       .then(data => document.getElementById('footer-placeholder').innerHTML = data);
   </script>
+
+     {% include 'includes/icons.html' %}
+
+
 </body>
 </html>

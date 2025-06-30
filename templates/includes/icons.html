@@ -1,0 +1,26 @@
+<!-- Scroll to Top Button -->
+<button onclick="scrollToTop()" id="scrollBtn"
+        class="btn btn-secondary rounded-circle shadow position-fixed"
+        style="bottom: 90px; right: 20px; width: 50px; height: 50px; display: none; z-index: 1050;"
+        title="Go to top">
+  <i class="bi bi-arrow-up fw-bolder fs-4"></i>
+</button>
+<!-- Scroll Script -->
+<script>
+  window.onscroll = function () {
+    const scrollBtn = document.getElementById("scrollBtn");
+    scrollBtn.style.display = (document.documentElement.scrollTop > 100) ? "block" : "none";
+  };
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/9449837441" target="_blank"
+   class="btn btn-success rounded-circle shadow position-fixed d-flex align-items-center justify-content-center"
+   style="bottom: 20px; right: 20px; width: 50px; height: 50px; z-index: 1050;"
+   title="Chat on WhatsApp">
+  <i class="bi bi-whatsapp fs-4 text-white"></i>
+</a>

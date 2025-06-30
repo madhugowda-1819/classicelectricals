@@ -22,28 +22,35 @@
 <body id="index">
 
 <section class="container-fluid py-5 bg-light" id="classic">
-  <div class="container">
-    <div class="row align-items-center">
-      
-      <!-- Left: Text Content -->
-      <div class="col-12 col-lg-6 mb-4 mb-lg-0">
-        <h2 class="fw-bold text-primary">Classic Electricals</h2>
-        <p class="fs-5 mt-3">
-          Classic Electricals is a certified and trusted provider of industrial-grade electrical instruments and inspection equipment. We cater to a wide range of B2B and B2C clients with an uncompromising focus on quality, innovation, and reliability.
-        </p>
-        <p>
-          Our offerings include pipe inspection cameras, HVAC accessories, toxic gas detectors, and advanced NDT instruments — ensuring safety and precision across sectors like construction, utilities, and manufacturing.
-        </p>
-        <!-- <a class="btn custom-btn rounded-pill px-4 mt-3" href="{% url 'about' %}">Learn More</a> -->
-      </div>
-
-      <!-- Right: Optional Visual or Logo -->
-      <div class="col-12 col-lg-6 text-center">
-        <img src="{% static 'images/classicicon.png' %}" alt="Classic Electricals Logo" class="img-fluid" style="max-height: 300px;">
-      </div>
-
+  <div class="container py-5">
+  <div class="row align-items-center">
+    
+    <!-- Left: Text Content -->
+    <div class="col-12 col-md-8 mb-4 mb-md-0">
+      <h2 class="fw-bold text-primary">Classic Electricals</h2>
+      <p class="fs-6 mt-3">
+        Based in <strong>Bengaluru, Karnataka</strong>, <strong>Classic Electricals</strong> is a certified and trusted manufacturer and supplier of industrial-grade electrical instruments and advanced inspection equipment. With years of experience, we have built a strong reputation for delivering high-performance solutions to both B2B and B2C clients across India.
+      </p>
+      <p class="fs-6 mt-3">
+        Our product line includes state-of-the-art <strong>Underwater Inspection Cameras</strong>, <strong>Gas Detectors</strong>, <strong>Video Borescopes</strong>, and <strong>Machine Vision Cameras</strong>. These solutions are designed to meet the stringent demands of industrial safety, monitoring, and inspection.
+      </p>
+      <p class="fs-6 mt-3">
+        At Classic Electricals, we are committed to <strong>quality, innovation, and reliability</strong>. Each product is engineered with precision and tested for performance to ensure it meets the highest standards. Our team continuously strives to provide timely and effective solutions tailored to diverse industrial applications.
+      </p>
+      <p class="fs-6 mt-3">
+        Whether you're looking for robust inspection tools or specialized electrical instruments, Classic Electricals delivers excellence that empowers your operations with confidence and safety.
+      </p>
+      <!-- <a class="btn custom-btn rounded-pill px-4 mt-3" href="{% url 'about' %}">Learn More</a> -->
     </div>
+
+    <!-- Right: Logo/Image -->
+    <div class="col-12 col-md-4 text-center">
+      <img src="{% static 'images/CE UTG (2)-Photoroom.png' %}" alt="Classic Electricals Logo" class="img-fluid mx-auto d-block" style="max-height: 300px;">
+    </div>
+
   </div>
+</div>
+
 </section>
 
 
@@ -151,6 +158,7 @@
 </section>
 
 
+
     {% include 'includes/footer.html' %}
 
   <section>
@@ -172,6 +180,9 @@
   <script>
   
 </script>
+
+    {% include 'includes/icons.html' %}
+
 
 </body>
 </html>
